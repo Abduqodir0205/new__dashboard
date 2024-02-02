@@ -1,14 +1,19 @@
 <template>
   <div>
-    <!-- <userLogin/> -->
+    <Login/>
   </div>
 </template>
 <script>
-import userLogin from './components/user-login.vue';
+import Login from './components/Login.vue';
 export default {
-  components:{
-    userLogin,
+ data() {
+  return {
+    
   }
+ },
+ components:{
+  Login,
+ }
 }
 </script>
 <style>

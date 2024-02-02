@@ -1,11 +1,14 @@
 <template>
   <div>
-    <h1>Salom</h1>
+    <!-- <userLogin/> -->
   </div>
 </template>
 <script>
+import userLogin from './components/user-login.vue';
 export default {
-  
+  components:{
+    userLogin,
+  }
 }
 </script>
 <style>

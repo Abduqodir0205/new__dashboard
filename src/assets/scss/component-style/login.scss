@@ -1,72 +1,128 @@
-.login{
-    // height: 100vh;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    input{
-      padding: 4px 0;
-      outline: none;
-      color: gray;
-      /* Paragraph/Small/Regular */
-      font-family: inter;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 20px; /* 142.857% */
-      border: none;
-      border-bottom: 2px solid;
-      border-color: -moz-linear-gradient(90deg, #555555, #111111);
-    }
-    span {
+.login {
+
+  input {
+    width: 406px;
+    padding: 4px 0;
+    outline: none;
+    color: gray;
+    /* Paragraph/Small/Regular */
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    border: none;
+    background-color: #e9f0ff;
+  }
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, #4f52ff, #91b3fa);
+  }
+  hr:last-child{
+    height: 3px;
+  }
+  span {
+    position: relative;
+  }
+  label {
+    color: gray;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    font-size: 18px;
+  }
+  input:is(:focus) ~ label {
+    transform: translateY(-100%) scale(0.92);
+  }
+  &__content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-left {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: linear-gradient(90deg, #4e51fe, #7d97f4);
+      img:first-child {
+        width: 50%;
         position: relative;
+        z-index: 1;
       }
-      label {
-        color: gray;
+      img:last-child {
+        height: 100%;
         position: absolute;
-        left: 0;
-        pointer-events: none;
+        right: 0;
       }
-      input:is(:focus) ~ label {
-        transform: translateY(-100%) scale(0.92);
-      }
-      input:is(:focus),
-      textarea:is(:focus) {
-        border-color: var(--input-border-hover-color);
-      }
-    &__content{
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        &-left{
-            width: 50%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            background: linear-gradient(90deg, #4E51FE, #7D97F4);
-            img:first-child{
-                position: relative;
-                z-index: 1;
-            }
-            img:last-child{
-                height: 100%;
-                position: absolute;
-                right: 0;
-            }
-        }
-
-        &-right{
-            width: 50%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            background-color: #E9F0FF;
-        }
     }
+
+    &-right {
+      h1 {
+        font-family: inter;
+      }
+      form {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        flex-wrap: wrap;
+        button{
+          color: white;
+          font-weight: 500;
+          padding: 10px 0;
+          font-family: inter;
+          background: linear-gradient(90deg, #4e51fe, #7d97f4);
+          border: none;
+          font-size: 16px;
+          border-radius: 10px;
+        }
+        .remember_parent {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          input[type="checkbox"] {
+            accent-color: #4e51fe;
+          }
+          .p {
+            font-family: inter;
+            color: gray;
+            font-size: 14px;
+            text-decoration: underline;
+            margin-top: 10px;
+          }
+          p:hover {
+            cursor: pointer;
+          }
+        }
+        .remember {
+          margin-top: 10px;
+          display: flex;
+          justify-content: start;
+          p {
+            margin-left: 10px;
+            font-family: inter;
+            color: gray;
+            font-size: 14px;
+            text-decoration: underline;
+          }
+
+          input {
+            width: 15px;
+          }
+        }
+      }
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #e9f0ff;
+    }
+  }
 }

@@ -10,12 +10,12 @@
         <h1>Sign in</h1>
         <form @submit.prevent="user">
           <span>
-            <input type="text" placeholder="Username"  v-model="username"/>
+            <input type="text" placeholder="Username"  v-model="username" oninvalid="this.setCustomValidity('Enter your Username!')" required/>
             <!-- <label for="">Email</label> -->
             <hr />
           </span>
           <span>
-            <input type="password" placeholder="Password" v-model="password"/>
+            <input type="password" placeholder="Password" v-model="password" oninvalid="this.setCustomValidity('Enter your password!')" required/>
             <!-- <label for="">Password</label> -->
             <hr />
             <span class="remember_parent">

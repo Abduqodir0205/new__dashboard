@@ -1,10 +1,12 @@
 <template >
     <div>
-        <navbar/>
+        <!-- <navbar/> -->
+        <SiteBar/>
     </div>
 </template>
 <script>
-import navbar from '../components/navbar.vue';
+// import navbar from '../components/navbar.vue';
+import SiteBar from '../components/SiteBar.vue';
 export default {
     data() {
         return {
@@ -12,7 +14,8 @@ export default {
         }
     },
     components:{
-        navbar,
+        // navbar,
+        SiteBar,
     }
 }
 </script>

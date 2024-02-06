@@ -30,6 +30,7 @@
       </div>
     </div>
   </nav>
+  <hr class="nav_bottom-hr">
 </template>
 <script>
 export default {

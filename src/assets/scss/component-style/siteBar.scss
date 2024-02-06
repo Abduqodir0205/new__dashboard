@@ -1,0 +1,29 @@
+.sitebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    div{
+        border: 1px solid var(--grey-grey-30);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        background: var(--primary-white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    div:hover{
+        cursor: pointer;
+        background: var(--primary-blue);
+        svg{
+            fill: #ffffff;
+        }
+    }
+    
+}
+
+.active{
+    background: var(--primary-blue);
+}

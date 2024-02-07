@@ -1,6 +1,7 @@
 nav {
-  padding: 15px 0;
-  background: rgba(246, 250, 253, 0.9);
+  width: 100%;
+  padding: 15px 1rem;
+  background:transparent;
   .nav__content {
     display: flex;
     align-items: center;
@@ -35,8 +36,8 @@ nav {
         height: 50px;
         background: var(--primary-white);
         display: flex;
-        align-items: center;
-        gap: 20px;
+        align-items:  center;
+        // gap: 20px;
         overflow: hidden;
         padding: 0 10px;
         hr {
@@ -45,9 +46,10 @@ nav {
           background: var(--grey-grey-90);
         }
         span {
+          display: inline-block;
           position: relative;
           top: 3px;
-          left: 5px;
+          right: .7rem;
         }
         input {
           width: 100%;

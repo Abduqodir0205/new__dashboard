@@ -1,6 +1,11 @@
 .dashboard {
   &-left {
+    width: 67%;
     &-content {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
       &-nextAppointment {
         width: 268px;
         height: 392px;
@@ -9,13 +14,166 @@
         background: var(--primary-blue);
       }
 
-      .recentDeals {
-        border: 1px solid var(--grey-grey-30);
-        border-radius: 12px;
+      &-recentDeals {
         width: 519px;
-        background: var(--primary-white);
         height: 392px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        overflow: hidden;
+        &-vewAll {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .recentDealsShowAll {
+            text-decoration: none;
+          }
+        }
+        &-deal {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          &-avatar {
+            border-radius: 25px;
+            width: 44px;
+            height: 44px;
+            img {
+              width: inherit;
+              height: inherit;
+              border-radius: inherit;
+            }
+          }
+          &-date {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            // justify-content: space-between;
+            gap: 0.2rem;
+            span {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 0;
+            }
+            p {
+              font-family: var(--font-family);
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 193%;
+              color: var(--grey-grey-70);
+            }
+          }
+        }
+      }
+
+      &-custm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        &-customers {
+          width: 268px;
+          height: 168px;
+          p {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 167%;
+            color: var(--grey-grey-70);
+          }
+          div {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            padding: 1rem;
+
+            h1 {
+              font-family: var(--third-family);
+              font-weight: 600;
+              font-size: 48px;
+              line-height: 167%;
+              color: var(--primary-navy);
+            }
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 100px;
+              width: 80px;
+              height: 80px;
+              background: linear-gradient(
+                180deg,
+                rgba(45, 200, 168, 0.5) 0%,
+                rgba(255, 255, 255, 0) 100%
+              );
+              svg {
+                fill: var(--primary-green);
+              }
+            }
+          }
+        }
+        h1 {
+          font-family: var(--third-family);
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 167%;
+          color: var(--primary-navy);
+        }
+        &-deals {
+          width: 268px;
+          height: 168px;
+          p {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 167%;
+            color: var(--grey-grey-70);
+          }
+          div {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            padding: 1rem;
+
+            h1 {
+              font-family: var(--third-family);
+              font-weight: 600;
+              font-size: 48px;
+              line-height: 167%;
+              color: var(--primary-navy);
+            }
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 100px;
+              width: 80px;
+              height: 80px;
+              background: linear-gradient(
+                180deg,
+                rgba(254, 128, 132, 0.5) 0%,
+                rgba(255, 255, 255, 0) 100%
+              );
+              svg {
+                fill: var(--primary-pink);
+              }
+            }
+          }
+        }
+      }
+
+      &-progress {
+        width: 519px;
+        height: 360px;
       }
     }
   }
+}
+
+.dashboard_box {
+  padding: 1rem;
+  border: 1px solid var(--grey-grey-30);
+  border-radius: 12px;
+  background: var(--primary-white);
 }

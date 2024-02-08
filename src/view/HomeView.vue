@@ -45,7 +45,7 @@ export default {
         display: flex;
         // align-items: ;
         min-height: 100vh;
-        background: linear-gradient(to right, rgba(246, 250, 253, 0.9) 0 70%,  rgba(238, 246, 251, 0.9) 70% 100%);
+        background: linear-gradient(to right, rgba(246, 250, 253, 0.9) 0 71%,  rgba(238, 246, 251, 0.9) 71% 100%);
     }
     navbar{
         width: 100vw;

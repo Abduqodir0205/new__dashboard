@@ -136,7 +136,7 @@
               <p>View All</p>
             </router-link>
           </div>
-          <router-link class="router-lin  kEl" to="/deals" v-for="s in 4">
+          <router-link class="router-linkEl" to="/deals" v-for="s in 4">
             <div class="dashboard-left-content-recentDeals-deal">
             <div class="dashboard-left-content-recentDeals-deal-avatar">
               <img src="../assets/images/png/Avatar.png" alt="avatar" />

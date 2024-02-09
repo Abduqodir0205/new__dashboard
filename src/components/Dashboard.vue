@@ -10,7 +10,8 @@
               <p>View All</p>
             </router-link>
           </div>
-          <div class="dashboard-left-content-recentDeals-deal">
+          <router-link class="router-link" to="/deals" v-for="s in 4">
+            <div class="dashboard-left-content-recentDeals-deal">
             <div class="dashboard-left-content-recentDeals-deal-avatar">
               <img src="../assets/images/png/Avatar.png" alt="avatar" />
             </div>
@@ -25,55 +26,12 @@
               </span>
             </div>
           </div>
-          <div class="dashboard-left-content-recentDeals-deal">
-            <div class="dashboard-left-content-recentDeals-deal-avatar">
-              <img src="../assets/images/png/Avatar.png" alt="avatar" />
-            </div>
-            <div class="dashboard-left-content-recentDeals-deal-date">
-              <span>
-                <h2>47 Spruce Drive</h2>
-                <h2>$5750</h2>
-              </span>
-              <span>
-                <p>Glenrock,WY</p>
-                <p>Nov 14, 07:00 AM</p>
-              </span>
-            </div>
-          </div>
-          <div class="dashboard-left-content-recentDeals-deal">
-            <div class="dashboard-left-content-recentDeals-deal-avatar">
-              <img src="../assets/images/png/Avatar.png" alt="avatar" />
-            </div>
-            <div class="dashboard-left-content-recentDeals-deal-date">
-              <span>
-                <h2>165 Belmont Drive</h2>
-                <h2>$5750</h2>
-              </span>
-              <span>
-                <p>Glenrock,WY</p>
-                <p>Nov 14, 07:00 AM</p>
-              </span>
-            </div>
-          </div>
-          <div class="dashboard-left-content-recentDeals-deal">
-            <div class="dashboard-left-content-recentDeals-deal-avatar">
-              <img src="../assets/images/png/Avatar.png" alt="avatar" />
-            </div>
-            <div class="dashboard-left-content-recentDeals-deal-date">
-              <span>
-                <h2>1538 Hammer Road</h2>
-                <h2>$5750</h2>
-              </span>
-              <span>
-                <p>Glenrock,WY</p>
-                <p>Nov 14, 07:00 AM</p>
-              </span>
-            </div>
-          </div>
+          </router-link>
         </div>
 
         <div class="dashboard-left-content-custm">
-          <div class="dashboard-left-content-custm-customers dashboard_box">
+          <router-link class="router-link" to="/customers">
+            <div class="dashboard-left-content-custm-customers dashboard_box">
             <p>customers</p>
             <div>
               <h1>71</h1>
@@ -106,7 +64,9 @@
               </div>
             </div>
           </div>
-          <div class="dashboard-left-content-custm-deals dashboard_box">
+          </router-link>
+          <router-link class="router-link" to="/deals">
+            <div class="dashboard-left-content-custm-deals dashboard_box">
             <p>Deals</p>
             <div>
               <h1>137</h1>
@@ -130,13 +90,73 @@
               </div>
             </div>
           </div>
+          </router-link>
         </div>
         <div class="dashboard-left-content-progress dashboard_box">
-          <p>Deals</p>
+          <router-link class="router-link" to="/deals">
+            <div>
+              <div class="dashboard-left-content-progress-left">
+                <div class="dashboard-left-content-progress-left-avatar">
+                  <img src="../assets/images/png/Avatar.png" alt="Avatar" />
+                </div>
+                <div class="div">
+                  <h2>1824 Turkey Pen Road</h2>
+                  <p>Cleveland,OH 12345</p>
+                </div>
+              </div>
+              <div class="dashboard-left-content-progress-right">
+                <div><p>IN PROGRESS</p></div>
+                <svg
+                  width="16"
+                  height="12"
+                  viewBox="0 0 16 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.025 11.6833C9.86669 11.6833 9.70835 11.625 9.58335 11.5C9.34169 11.2583 9.34169 10.8583 9.58335 10.6166L14.2 5.99998L9.58335 1.38331C9.34169 1.14164 9.34169 0.741642 9.58335 0.499976C9.82502 0.258309 10.225 0.258309 10.4667 0.499976L15.525 5.55831C15.7667 5.79998 15.7667 6.19998 15.525 6.44164L10.4667 11.5C10.3417 11.625 10.1834 11.6833 10.025 11.6833Z"
+                    fill="#514EF3"
+                  />
+                  <path
+                    d="M14.9417 6.62498H0.916687C0.57502 6.62498 0.291687 6.34164 0.291687 5.99998C0.291687 5.65831 0.57502 5.37498 0.916687 5.37498H14.9417C15.2834 5.37498 15.5667 5.65831 15.5667 5.99998C15.5667 6.34164 15.2834 6.62498 14.9417 6.62498Z"
+                    fill="#514EF3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </router-link>
         </div>
       </div>
     </div>
-    <div class="dashboard-right"></div>
+    <div class="dashboard-right">
+      <div class="dashboard-right-customers">
+          <div class="dashboard-right-top">
+            <h1>customers</h1>
+            <router-link class="recentDealsShowAll" to="/deals">
+              <p>View All</p>
+            </router-link>
+          </div>
+          <router-link class="router-lin  kEl" to="/deals" v-for="s in 4">
+            <div class="dashboard-left-content-recentDeals-deal">
+            <div class="dashboard-left-content-recentDeals-deal-avatar">
+              <img src="../assets/images/png/Avatar.png" alt="avatar" />
+            </div>
+            <div class="dashboard-left-content-recentDeals-deal-date">
+              <span>
+                <h2>Deanna Annis</h2>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.61667 15.2667C3.10833 15.2667 2.63333 15.0917 2.29167 14.7667C1.85833 14.3583 1.65 13.7417 1.725 13.075L2.03333 10.375C2.09167 9.86667 2.4 9.19167 2.75833 8.82501L9.6 1.58334C11.3083 -0.224995 13.0917 -0.274995 14.9 1.43334C16.7083 3.14167 16.7583 4.92501 15.05 6.73334L8.20833 13.975C7.85833 14.35 7.20833 14.7 6.7 14.7833L4.01667 15.2417C3.875 15.25 3.75 15.2667 3.61667 15.2667ZM12.275 1.42501C11.6333 1.42501 11.075 1.82501 10.5083 2.42501L3.66667 9.67501C3.5 9.85001 3.30833 10.2667 3.275 10.5083L2.96667 13.2083C2.93333 13.4833 3 13.7083 3.15 13.85C3.3 13.9917 3.525 14.0417 3.8 14L6.48333 13.5417C6.725 13.5 7.125 13.2833 7.29167 13.1083L14.1333 5.86667C15.1667 4.76667 15.5417 3.75001 14.0333 2.33334C13.3667 1.69167 12.7917 1.42501 12.275 1.42501Z" fill="#7E92A2" />
+                  <path d="M13.45 8.12501C13.4333 8.12501 13.4083 8.12501 13.3917 8.12501C10.7917 7.86667 8.7 5.89167 8.3 3.30834C8.25 2.96667 8.48333 2.65001 8.825 2.59167C9.16667 2.54167 9.48333 2.77501 9.54167 3.11667C9.85833 5.13334 11.4917 6.68334 13.525 6.88334C13.8667 6.91667 14.1167 7.22501 14.0833 7.56667C14.0417 7.88334 13.7667 8.12501 13.45 8.12501Z" fill="#7E92A2" />
+                  <path d="M16.5 17.9583H1.5C1.15833 17.9583 0.875 17.675 0.875 17.3333C0.875 16.9917 1.15833 16.7083 1.5 16.7083H16.5C16.8417 16.7083 17.125 16.9917 17.125 17.3333C17.125 17.675 16.8417 17.9583 16.5 17.9583Z" fill="#7E92A2" />
+                </svg>
+              </span>
+              <p>deannannis@gmail.com</p>
+              
+            </div>
+          </div>
+          </router-link>
+        </div>
+    </div>
   </div>
 </template>
 <script>

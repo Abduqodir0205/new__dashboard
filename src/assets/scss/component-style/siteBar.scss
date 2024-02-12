@@ -1,15 +1,19 @@
 .sitebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
   padding: 0 15px;
   border-right: 1px solid var(--grey-grey-30);
+
   .logo {
     position: relative;
-    right: .4rem;
+    right: 0.4rem;
     width: 110%;
-    height: 80px;   
+    height: 80px;
     img {
       width: inherit;
       height: inherit;

@@ -43,7 +43,6 @@ export default {
 
     .view{
         display: flex;
-        // align-items: ;
         min-height: 100vh;
         background: linear-gradient(to right, rgba(246, 250, 253, 0.9) 0 71%,  rgba(238, 246, 251, 0.9) 71% 100%);
     }
@@ -57,5 +56,6 @@ export default {
         width: 100%;
         display: flex;
         flex-direction: column;
+        
     }
 </style>

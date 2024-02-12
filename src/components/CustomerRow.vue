@@ -1,6 +1,8 @@
 <template>
     <div class="customerRow">
-        <table></table>
+        <table>
+            <th></th>
+        </table>
     </div>
 </template>
 <script>

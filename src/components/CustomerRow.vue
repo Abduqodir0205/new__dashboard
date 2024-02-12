@@ -2,6 +2,7 @@
     <div class="customerRow">
         <table>
             <th></th>
+            <td></td>
         </table>
     </div>
 </template>

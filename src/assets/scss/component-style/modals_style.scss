@@ -1,0 +1,68 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  .addNew {
+    padding: 0.4rem 0;
+    width: 240px;
+    height: 153px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    border-radius: 12px;
+    width: 240px;
+    height: 153px;
+    background: var(--primary-white);
+    position: absolute;
+    top: 38%;
+    left: 43%;
+    hr {
+      height: 1px;
+      border: none;
+      background: var(--grey-grey-30);
+    }
+    &-top {
+      padding: 0 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 214%;
+        color: var(--grey-grey-70);
+      }
+    }
+    &-deal,
+    &-customer {
+      padding: 0 0.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        h3 {
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 214%;
+          color: var(--primary-navy);
+        }
+      }
+    }
+  }
+}
+
+// Modal Deal
+
+.modalDeal{
+    &__content{
+        
+    }
+}

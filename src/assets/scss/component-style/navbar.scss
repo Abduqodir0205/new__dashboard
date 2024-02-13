@@ -3,8 +3,8 @@ nav {
   padding: 15px 1rem;
   background: linear-gradient(to right, rgba(246, 250, 253, 1) 0 68.6%,  rgba(238, 246, 251, 1) 68.6% 100%);
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 20px -10px;
-  // position: sticky;
-  // top: 0;
+  position: sticky;
+  top: 0;
   // z-index: 11;
   .nav__content {
     display: flex;

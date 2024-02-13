@@ -30,7 +30,7 @@
                     </svg>
                   </div>
                   <hr />
-                  <div class="addNew-deal">
+                  <div class="addNew-deal" @click="open = !open">
                     <div>
                       <svg
                         width="18"
@@ -127,6 +127,12 @@
                     </svg>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div v-else="open" class="modalDeal">
+              <div class="modalDeal__content">
+
               </div>
             </div>
           </Teleport>

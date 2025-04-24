@@ -10,7 +10,7 @@
     </div>
 </template>
 <script>
-import navbar from '../components/navbar.vue';
+import navbar from '../components/Navbar.vue';
 import SiteBar from '../components/SiteBar.vue';
 export default {
     data() {
